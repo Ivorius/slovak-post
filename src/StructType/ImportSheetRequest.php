@@ -43,7 +43,7 @@ class ImportSheetRequest extends AbstractStructBase
      * @param \Unio\SlovakPost\StructType\EphType $ePH
      * @param bool $contract
      */
-    public function __construct(\Unio\SlovakPost\StructType\AuthType $auth = null, \Unio\SlovakPost\StructType\EphType $ePH = null, $contract = null)
+    public function __construct(\Unio\SlovakPost\StructType\AuthType $auth, \Unio\SlovakPost\StructType\EphType $ePH, $contract = null)
     {
         $this
             ->setAuth($auth)
@@ -63,7 +63,7 @@ class ImportSheetRequest extends AbstractStructBase
      * @param \Unio\SlovakPost\StructType\AuthType $auth
      * @return \Unio\SlovakPost\StructType\ImportSheetRequest
      */
-    public function setAuth(\Unio\SlovakPost\StructType\AuthType $auth = null)
+    public function setAuth(\Unio\SlovakPost\StructType\AuthType $auth)
     {
         $this->auth = $auth;
         return $this;
@@ -81,7 +81,7 @@ class ImportSheetRequest extends AbstractStructBase
      * @param \Unio\SlovakPost\StructType\EphType $ePH
      * @return \Unio\SlovakPost\StructType\ImportSheetRequest
      */
-    public function setEPH(\Unio\SlovakPost\StructType\EphType $ePH = null)
+    public function setEPH(\Unio\SlovakPost\StructType\EphType $ePH)
     {
         $this->EPH = $ePH;
         return $this;
